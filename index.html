@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo 1 – Mexican & Burgers</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -14,7 +20,7 @@
         }
 
         header {
-            background: url('hero-burgers-tacos.jpg') center/cover no-repeat;
+            background: url('hero.jpg') center/cover no-repeat;
             height: 60vh;
             display: flex;
             align-items: center;
@@ -106,7 +112,10 @@
         <div>
             <h1>Demo 1 – Mexican & Burgers</h1>
             <p>Fresh, Fast, Flavorful — Your Local Burger & Mexican Spot</p>
-            <a href="#menu" class="button">View Menu</a>
+            <a href="#menu" class="button rounded-2xl bg-black text-white px-6 py-3 text-lg shadow hover:opacity-90">
+                View Full Menu
+            </a>
+
         </div>
     </header>
 
@@ -132,26 +141,175 @@
                 <h3>Loaded Fries</h3>
                 <p>Fries topped with cheese, bacon, guac.</p>
             </div>
-                <div class="flex flex-col items-center bg-white rounded-2xl p-4 shadow">
-                    <img src="images/chicken-quesadilla.jpg" alt="Taco image"
-                        class="w-72 h-72 object-cover rounded-xl mb-4">
-                    <h3>Chicken Quesadilla</h3>
-                    <p>Grilled tortilla stuffed with seasoned chicken and cheese.</p>
-                </div>
+            <div class="flex flex-col items-center bg-white rounded-2xl p-4 shadow">
+                <img src="images/chicken-quesadilla.jpg" alt="Taco image"
+                    class="w-72 h-72 object-cover rounded-xl mb-4">
+                <h3>Chicken Quesadilla</h3>
+                <p>Grilled tortilla stuffed with seasoned chicken and cheese.</p>
+            </div>
     </section>
 
-    <section class="section">
-        <h2>Visit Us</h2>
-        <div class="info-box">
-            <h3>Hours</h3>
-            <p>Mon–Sun: 10am – 10pm</p>
-        </div>
-        <div class="info-box">
-            <h3>Location</h3>
-            <p>123 Main Street, California</p>
-            <p><em>(Google Map embed can go here)</em></p>
+    <!-- Menu Section -->
+    <section id="menu" class="max-w-4xl mx-auto my-16 px-4">
+        <h2 class="text-3xl font-bold mb-6 text-center">Menu</h2>
+
+        <!-- Category: Breakfast -->
+        <details class="border rounded-lg shadow-sm mb-4">
+            <summary class="cursor-pointer text-xl font-semibold px-4 py-3 bg-gray-100">
+                Breakfast
+            </summary>
+
+            <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Item -->
+                <div class="flex items-center justify-between border-b pb-2 group">
+                    <div class="pr-4">
+                        <h4 class="font-semibold">Pancake Stack</h4>
+                        <p class="text-sm text-gray-600">Fluffy pancakes with maple syrup</p>
+                    </div>
+                    <img src="images/pancakes.jpg"
+                        class="w-20 h-20 object-cover rounded-lg transition transform group-hover:scale-105 shadow-sm">
+                </div>
+
+                <div class="flex items-center justify-between border-b pb-2 group">
+                    <div class="pr-4">
+                        <h4 class="font-semibold">Egg & Bacon Plate</h4>
+                        <p class="text-sm text-gray-600">Classic hearty breakfast</p>
+                    </div>
+                    <img src="images/bacon.jpg"
+                        class="w-20 h-20 object-cover rounded-lg transition transform group-hover:scale-105 shadow-sm">
+                </div>
+            </div>
+        </details>
+
+        <!-- Category: Lunch -->
+        <details class="border rounded-lg shadow-sm mb-4">
+            <summary class="cursor-pointer text-xl font-semibold px-4 py-3 bg-gray-100">
+                Lunch
+            </summary>
+
+            <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-center justify-between border-b pb-2 group">
+                    <div class="pr-4">
+                        <h4 class="font-semibold">Classic Cheeseburger</h4>
+                        <p class="text-sm text-gray-600">Beef patty, lettuce, tomato, house sauce</p>
+                    </div>
+                    <img src="images/cheeseburger.jpg"
+                        class="w-20 h-20 object-cover rounded-lg transition transform group-hover:scale-105 shadow-sm">
+                </div>
+
+                <div class="flex items-center justify-between border-b pb-2 group">
+                    <div class="pr-4">
+                        <h4 class="font-semibold">Chicken Wrap</h4>
+                        <p class="text-sm text-gray-600">Grilled chicken with veggies</p>
+                    </div>
+                    <img src="images/wrap.jpg"
+                        class="w-20 h-20 object-cover rounded-lg transition transform group-hover:scale-105 shadow-sm">
+                </div>
+            </div>
+        </details>
+
+        <!-- Category: Dinner -->
+        <details class="border rounded-lg shadow-sm mb-4">
+            <summary class="cursor-pointer text-xl font-semibold px-4 py-3 bg-gray-100">
+                Dinner
+            </summary>
+
+            <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-center justify-between border-b pb-2 group">
+                    <div class="pr-4">
+                        <h4 class="font-semibold">Steak Plate</h4>
+                        <p class="text-sm text-gray-600">Grilled sirloin with sides</p>
+                    </div>
+                    <img src="images/steak.jpg"
+                        class="w-20 h-20 object-cover rounded-lg transition transform group-hover:scale-105 shadow-sm">
+                </div>
+
+                <div class="flex items-center justify-between border-b pb-2 group">
+                    <div class="pr-4">
+                        <h4 class="font-semibold">Salmon Dinner</h4>
+                        <p class="text-sm text-gray-600">Oven-roasted salmon with lemon butter</p>
+                    </div>
+                    <img src="images/salmon.jpg"
+                        class="w-20 h-20 object-cover rounded-lg transition transform group-hover:scale-105 shadow-sm">
+                </div>
+            </div>
+        </details>
+    </section>
+
+
+
+
+    <!-- Contact Section-->
+    <section id="contact-us" class="section py-12 px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+
+        <div class="info-box shadow-lg rounded-2xl p-6 max-w-xl mx-auto space-y-4">
+
+            <!-- Phone -->
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-red-600" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 5h2l3.6 7.59-1.35 2.44a1 1 0 00.25 1.14l3.6 3.6a1 1 0 001.14.25l2.44-1.35L19 19v2a1 1 0 01-1 1h-2c-7 0-12-5-12-12V6a1 1 0 011-1z" />
+                </svg>
+                <span>(555) 123-4567</span>
+            </div>
+
+            <!-- Instagram -->
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-pink-500" fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.337 3.608 1.312.975.975 1.25 2.242 1.312 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.337 2.633-1.312 3.608-.975.975-2.242 1.25-3.608 1.312-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.337-3.608-1.312-.975-.975-1.25-2.242-1.312-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.337-2.633 1.312-3.608.975-.975 2.242-1.25 3.608-1.312C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.736 0 8.332.012 7.052.07 5.771.128 4.671.36 3.754.852 2.833 1.345 2.083 2.095 1.59 3.016.596 4.516.596 7.071.596 12s0 7.484.994 8.984c.493.921 1.243 1.671 2.164 2.164.917.492 2.017.724 3.298.782 1.28.058 1.684.07 4.948.07s3.668-.012 4.948-.07c1.281-.058 2.381-.29 3.298-.782.921-.493 1.671-1.243 2.164-2.164.994-1.5.994-4.055.994-8.984s0-7.484-.994-8.984c-.493-.921-1.243-1.671-2.164-2.164C19.381.29 18.281.058 16.999 0 15.719-.058 15.315-.07 12-.07S8.281-.058 7.052 0z" />
+                    <circle cx="12" cy="12" r="3.6" />
+                </svg>
+                <span>@RestaurantName</span>
+            </div>
+
+            <!-- Facebook -->
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-600" fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24H12.82V14.708h-3.13v-3.622h3.13V8.413c0-3.1 1.892-4.788 4.655-4.788 1.324 0 2.462.099 2.793.143v3.236l-1.918.001c-1.504 0-1.795.716-1.795 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.406 24 22.676V1.325C24 .593 23.407 0 22.675 0z" />
+                </svg>
+                <span>RestaurantName</span>
+            </div>
+
+            <!-- Call Now Button -->
+            <a href="tel:5551234567"
+                class="inline-block bg-red-600 text-white font-bold px-6 py-3 rounded-2xl mt-4 text-center hover:bg-red-700 transition">
+                Call Now
+            </a>
+
         </div>
     </section>
+
+    <!-- end contact section-->
+
+    <!-- Hour and map-->
+    <section class="section py-12 px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">Visit Us</h2>
+
+        <!-- Hours -->
+        <div class="info-box mb-8 text-center">
+            <h3 class="text-xl font-semibold mb-2">Hours</h3>
+            <p>Mon–Sun: 10am – 10pm</p>
+        </div>
+
+        <!-- Map -->
+        <div class="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7737082582955!2d-118.2436836847848!3d34.052235080607736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b8b1a956ed%3A0x82f1df9a1c9d13ba!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+
+        <p class="text-center text-gray-600 mt-4">
+            123 Main Street, California
+        </p>
+    </section>
+
 
     <section class="section">
         <h2>What Our Customers Say</h2>
