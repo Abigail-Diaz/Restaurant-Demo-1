@@ -85,14 +85,14 @@ Or use your own image hosting service (Cloudinary, Imgur, etc.)
 4. Copy the iframe code
 5. Replace the existing iframe in the Location section
 
-## 📱 Browser Compatibility
+## Browser Compatibility
 
-- ✅ Chrome/Edge (recommended)
-- ✅ Firefox
-- ✅ Safari
-- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
+-  Chrome/Edge (recommended)
+- Firefox
+-  Safari
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **HTML5**: Semantic markup
 - **CSS3**: Custom styling with flexbox and grid
@@ -101,7 +101,7 @@ Or use your own image hosting service (Cloudinary, Imgur, etc.)
 - **Google Maps Embed**: Location integration
 - **Unsplash**: Demo images (replace with your own)
 
-## 📦 File Structure
+## File Structure
 ```
 flavor-haven-demo/
 │
