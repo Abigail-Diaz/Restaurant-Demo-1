@@ -127,11 +127,6 @@ Perfect for:
 - Pop-up restaurants
 - Fast-casual eateries
 
-##  Support & Customization
-
-Need help customizing this template for your business?
-- Email: support@example.com
-- Website: www.example.com
 
 
 ## Updates
